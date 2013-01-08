@@ -46,15 +46,18 @@ Pre-Rocksmith Effects
 I am going to avoid putting tone-altering effects blocks before the FX
 Loop so as not to disrupt Rocksmith's note detection.
 
-It is also important that any effects before the loop are
-stereo-in/stereo-out and do not mix their left- and right- channels at
-all so that the Guitar/Bass separation is maintained.
+All effects produce output on both the left and right channels if there
+is input on either channel. This means that in order to place effects
+before the loop without compromising the channel separation we have to
+use the A and B paths and place the FX Loop after the mixer. This
+applies even if the effects on paths A and B are identical in every way.
 
-There are some useful tonally-neutral effects, in particular the Hard
-Gate: it is a good way to cut down on unwanted noise during the quiet
-bits of Plug In Baby and other high-gain tracks. I am not as sure as I
-would like to be that this is a non-channel-mixing stereo-in stereo-out
-effect.
+Unfortunately if we do this it means that we can't process the Guitar
+and Bass separately post-Rocksmith.
+
+There are some useful non-disruptive effects, in particular the Hard
+Gate is a good way to cut down on unwanted noise during the quiet bits
+of high-gain tracks.
 
 Post-Rocksmith Effects
 ----------------------
