@@ -65,6 +65,7 @@ After the FX Loop you will find the tone-altering effects blocks.
 Guitar-altering blocks go into the top path (Path A) and Bass-altering
 blocks go into the lower path (Path B). Anything which applies equally
 to both can go in the common section after the paths come back together.
-The common path before the paths split can only be used for
-non-channel-mixing stereo-in stereo-out effects that need to apply to
+The common path before the paths split cannot be used because all
+effects blocks produce output on both channels when there is input on
+either channel – this ruins the Guitar/Bass signal separation.
 both instruments.
