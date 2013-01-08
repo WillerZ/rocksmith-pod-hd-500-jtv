@@ -68,4 +68,3 @@ to both can go in the common section after the paths come back together.
 The common path before the paths split cannot be used because all
 effects blocks produce output on both channels when there is input on
 either channel – this ruins the Guitar/Bass signal separation.
-both instruments.
